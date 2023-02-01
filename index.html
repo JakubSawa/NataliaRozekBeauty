@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natalia Rożek Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Playfair+Display:1,300,400,400italic,500,700,700italic,900');
+
+:root{
+
+    --main-color:#d7c7ae;
+    --primary-color: black;
+    --hover: #5a4d3e;
+    --black:#2a201c;
+    --white:#fff;
+    --light-bg:#f3efec;
+    --dark-bg:rgba(0,0,0,.7);
+    --border:.1rem solid #aaa;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Playfair Display', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+}
+ 
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+ 
+html::-webkit-scrollbar{
+    width: .6rem;
+}
+ 
+html::-webkit-scrollbar-track{
+    background-color: var(--white);
+}
+ 
+html::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+}
+ 
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+   text-align: center;
+   color:var(--primary-color);
+   text-transform: capitalize;
+   margin-bottom: 3rem;
+   font-size: 4rem;
+   margin-top: 4rem;
+}
+ 
+.btn{
+   margin-top: 1rem;
+   display: inline-block;
+   background: var(--primary-color);
+   color:var(--white);
+   font-size: 2rem;
+   cursor: pointer;
+   padding:1rem 3rem;
+   
+}
+ 
+.btn:hover{
+    background: var(--hover);
+}
+
+/* header */
+
+
+
+
+
+
+ nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+	background-color: #fdf5f0;
+    color: #000;
+}
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+	color: #fff;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 60%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 0em;
+	font-size: 15px;
+	font-weight: 500;
+	color: black;
+	text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    
+  
+}
+
+nav .links button {
+	display: block;
+	padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+	font-size: 15px;
+	font-weight: 550;
+	color: black;
+	text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: transparent;
+    border: solid 1px black;
+    border-radius: 10px;
+    
+  
+}
+
+nav .links a img {
+	margin-left: -20px;
+    
+  
+}
+
+nav .links a img:hover {
+	transform: scale(1.05);
+    
+  
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: black;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: none;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 100px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: space-evenly;
+		background-color: white;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+ /* header */
+
+ /* home */
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/home-slider.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content span{
+    font-size: 3rem;
+    letter-spacing: .5rem;
+    padding-bottom: .5rem;
+    color:black;
+    text-transform: uppercase;
+ }
+
+.home .content h3 {
+    color:var(--black);
+    font-size: 8rem; 
+    line-height: 8rem; 
+    font-weight: 900;
+}
+
+.home .content .home-reservation {
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.home .content .home-reservation:hover {
+    transform: scale(1.03);
+}
+
+.home .content .home-more {
+    margin-top: 20px;
+    background-color: transparent;
+    border: solid 2px black;
+    color: black;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-right: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.home .content .home-more:hover {
+    transform: scale(1.03);
+}
+
+@media(max-width: 500px){
+    .home{
+        width: 100%;
+        height: 100px;
+    }
+
+    .home{
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    background:url(/images/home-slider.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 100px;
+}
+
+    
+
+    .home .content h3{
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .home .content span{
+        font-size: 8px;
+        line-height: 20px;
+    }
+
+    .home-reservation{
+        display: none;
+    }
+
+    .home-more{
+        display: none;
+    }
+}
+
+
+ /* home */
+
+/* about */
+
+.about{
+    background-image:url(../images/about-left.png);
+    background-repeat:no-repeat; 
+    background-position:left bottom;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 39rem;
+}
+
+.about .row .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.about .row .content{
+    flex:1 1 51rem;
+    padding:5rem;
+}
+
+.about .row .content h1{
+    font-size: 3rem;
+    color:black;
+    justify-content: start;
+    
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#444;
+    padding:1rem 0;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.about .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 3rem;
+ }
+ 
+ .about .content .icons-container .icons{
+    flex:1 1 16rem;
+    text-align: center;
+    background: var(--light-bg);
+    padding:3rem 2rem;
+    border-radius: 10px;
+ }
+ 
+ .about .content .icons-container .icons img{
+    height: 5rem;
+}
+ 
+.about .content .icons-container .icons h3{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color:#444;
+    font-weight: normal;
+    text-transform: capitalize;
+ }
+
+ @media(max-width: 500px){
+
+    .about{
+        background-image:url();
+
+    }
+    .row{
+        display: flex;
+
+    }
+
+
+    .about .row .content{
+    flex:1 1 51rem;
+    padding:0.5rem;
+}
+
+    .about .row .content h1{
+    font-size: 2rem;
+    color:black;
+    justify-content: start;
+    
+    }
+
+    .about .row .content p{
+    font-size: 1rem;
+    color:#444;
+    padding:1rem 0;
+    line-height: 1.8;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    }
+
+    .about .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 3rem;
+ }
+ 
+ .about .content .icons-container .icons{
+    flex:1 1 1rem;
+    text-align: center;
+    background: var(--light-bg);
+    padding:3rem 2rem;
+    border-radius: 10px;
+ }
+ 
+ .about .content .icons-container .icons img{
+    height: 5rem;
+}
+ 
+.about .content .icons-container .icons h3{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color:#444;
+    font-weight: normal;
+    text-transform: capitalize;
+ }
+}
+
+/* end about */
+
+
+/* services */
+
+.inspiration{
+    background-color: var(--light-bg);
+ }
+
+ C
+
+.thumbnail img:focus,
+.thumbnail img:focus {
+    border: solid 5px rgb(78, 76, 226);
+}
+
+.popup {
+    align-content: center;
+    animation: fadeIn 0.3s;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup.fade-out {
+    animation: fadeOut 0.3s both;
+}
+
+.popup__img {
+    max-height: 80%;
+    max-width: 80%;
+}
+
+.popup__close {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 50px;
+    position: fixed;
+    right: 100px;
+    top: 5px;
+}
+
+.popup__arrow {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 128px;
+    height: 128px;
+    line-height: 128px;
+    position: absolute;
+    top: 35%;
+    width: 128px;
+}
+
+.popup__close,
+.popup__arrow {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.popup__close:hover,
+.popup__arrow:hover {
+    opacity: 1;
+}
+
+.popup__arrow--left {
+    left: 5%;
+    background-color: transparent;
+}
+
+.popup__arrow--left i{
+    color: white;
+    font-size: 50px;
+
+}
+
+.popup__arrow--right {
+    right: 5%;
+    background-color: transparent;
+}
+
+.popup__arrow--right i{
+    color: white;
+    font-size: 50px;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@media(max-width: 500px){
+    .gallery {
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+
+}
+
+.thumbnail {
+    border: solid 3px rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    
+    cursor: pointer;
+    margin: 0px;
+    max-height: 100px;
+    max-width: 90px;
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s;
+    opacity: 0.9;
+}
+
+.thumbnail:hover {
+    opacity: 1;
+}
+
+.thumbnail img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+    }
+
+
+
+
+
+
+ 
+
+ /* services */
+
+/* styles */
+
+.styles{
+    background: white;
+}
+
+.styles .heading{
+    padding-top: 10px;
+
+}
+ 
+.styles .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:1.5rem;
+}
+
+.styles .box-container .box:hover{
+    margin-top: -10px;
+ }
+ 
+.styles .box-container .box .image{
+    overflow:hidden;
+    width: 100%;
+    text-align: center;
+ }
+ 
+.styles .box-container .box .image img{
+    object-fit: cover;
+    width: 150px;
+    height: 250px;
+}
+ 
+.styles .box-container .box .content{
+    text-align: center;
+}
+ 
+.styles .box-container .box .content .title{
+    font-size: 22px;
+    color:var(--primary-color);
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+
+@media(max-width: 500px){
+    .styles .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    gap:1.5rem;
+    
+    }
+
+.styles .box-container .box:hover{
+    margin-top: -10px;
+ }
+ 
+.styles .box-container .box .image{
+    overflow:hidden;
+    width: 100%;
+    text-align: center;
+ }
+ 
+.styles .box-container .box .image img{
+    object-fit: cover;
+    width: 50px;
+    height: 150px;
+}
+
+.styles .heading{
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.styles .box-container .box .content .title{
+    font-size: 12px;
+    color:var(--primary-color);
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: 500;
+    padding-top: 10px;
+    letter-spacing: 1px;
+}
+}
+ 
+
+
+/* styles */
+
+/* Product */
+
+.product {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    background-color: transparent;
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
+  
+  .product-category {
+    padding: 0 14vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  
+  .product-container {
+    width: 1000px;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin: auto;
+    
+  }
+  
+  .product-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .product-card {
+    flex: 0 0 auto;
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+    background-color: var(--light-bg);
+    border-radius: 10px;
+  }
+  
+  
+  
+  .product-card{
+    background-color: var(--light-bg);
+    border-radius: 20px;
+    color: #fff;
+    text-align: start;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+  }
+  
+  
+  .product-card h3{
+      color: black;
+    font-size: 18px;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .product-card p{
+    color: rgb(70, 70, 70);
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+    
+  }
+  
+  
+  .product-card h6{
+    font-size: 30px;
+    font-weight: 500;
+    color: black;;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 60px;
+  }
+  
+  
+  
+
+  
+  .product-card h6 span{
+    color: black;
+    font-size:12px;
+    margin-top: 0;
+  }
+
+ 
+  
+  .btn-price{
+    margin-top: 5px;
+   
+    border-radius: 10px;
+    border: black solid 2px;
+    color: white;
+    background-color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .btn-price:hover{
+    background-color: black;
+    color: white;
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .pre-btn {
+    border: none;
+    width: 12vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 8;
+  }
+  
+  .pre-btn i{
+    left: 0;
+    font-size: 25px;
+    padding: 10px 15px ;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    color: white;
+  }
+  
+  .nxt-btn {
+    right: 0;
+    border: none;
+    width: 12vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 8;
+    
+    background-color: transparent;
+  }
+  
+  .nxt-btn i{
+    font-size: 25px;
+    padding: 10px 15px 10px 15px;
+    background-color: #ebebeb;
+    border-radius: 50%;
+    color: white;
+  }
+
+  .nxt-btn i:hover{
+    background-color: var(--light-bg);
+    transform: scale(1.1);
+    
+  }
+
+  .pre-btn i:hover{
+    background-color: var(--light-bg);
+    transform: scale(1.1);
+    
+  }
+  
+  .pre-btn img,
+  .nxt-btn img {
+    opacity: 0.2;
+  }
+  
+  .pre-btn:hover img,
+  .nxt-btn:hover img {
+    opacity: 1;
+  }
+  
+  .collection-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .collection {
+    position: relative;
+  }
+  
+  .collection img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .collection p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+  }
+  
+  .collection:nth-child(3) {
+    grid-column: span 2;
+    margin-bottom: 10px;
+  }
+
+
+  @media(max-width: 500px){
+
+  .pre-btn {
+    display: none;
+  }
+  
+  
+  .nxt-btn {
+    display: none;
+  }
+}
+
+/* End Product */
+
+
+
+/* Babski Concept */
+
+
+.contact-salon{
+    background-color: #fdf5f0;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.contact-salon .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-salon .row .image{
+    flex:1 1 70rem;
+    
+}
+
+.contact-salon .row .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.contact-salon .row .content{
+    flex:1 1 51rem;
+    padding:5rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reservation img{
+    width: 500px;
+}
+
+.babski-concept-logo img{
+    width: 400px;
+}
+
+.booksy-img img{
+    padding-top: 30px;
+    width: 200px;
+}
+
+.booksy-img img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media(max-width: 500px){
+    .contact-salon .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-salon .row .image{
+    flex:1 1 70rem;
+    
+}
+
+.contact-salon .row .image img{
+    width: 100%;
+    border-radius: 10px;
+}
+.contact-salon .row .content{
+    flex:1 1 51rem;
+    padding:1rem;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reservation img{
+    width: 60%;
+}
+
+.babski-concept-logo img{
+    width: 90%;
+}
+
+.booksy-img img{
+    padding-top: 30px;
+    width: 200px;
+}
+
+.booksy-img img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+    
+    }
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+/* End Babski Concept */
+
+/* review  */
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+    
+}
+
+.review .box-container .box{
+    border:var(--border);
+    text-align: center;
+    padding:3rem 2rem;
+    border-radius: 10px;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color:var(--black);
+    padding:2rem 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review .box-container .box h3{
+    padding:1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review .box-container .box img{
+    width: 70px;
+    
+}
+
+.review .box-container .box .stars i{
+    font-size: 1.5rem;
+    color:var(--primary-color);
+}
+
+/* review end */
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    
+}
+
+.row-footer{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col-footer{
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col-footer:nth-child(2), .col-footer:nth-child(3){
+    flex-basis: 15%;
+}
+
+.logo{
+    margin-bottom: 30px;
+}
+
+.col-footer h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-footer p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col-footer ul li a{
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-footer ul li a:hover{
+    color: white;
+}
+
+.col-footer h4{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(238, 238, 238);
+}
+
+.col-footer h4:hover{
+    color: white;
+}
+
+.social-img {
+    margin-bottom: 30px;
+}
+
+.social-img img{
+    width: 150px;
+    cursor: pointer;
+}
+
+.social-img img:hover{
+    transform: scale(1.1);
+}
+
+.social-icons i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    background-color: rgb(238, 238, 238);
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.social-icons i:hover{
+    transform: scale(1.1);
+    background-color: white;
+}
+
+hr{
+    padding-top: 10px;
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid white;
+    margin: auto;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background-color: #767676;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+@media(max-width: 700px){
+    footer{
+        bottom: unset;
+    }
+    .col-footer{
+        flex-basis: 100%;
+    }
+    .col-footer:nth-child(2), .col-footer:nth-child(3){
+        flex-basis: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    footer{
+        bottom: unset;
+        text-align: center;
+        margin: auto;
+    }
+    .col-footer{
+        flex-basis: 100%;
+    }
+    .col-footer:nth-child(2), .col-footer:nth-child(3){
+        flex-basis: 40%;
+    }
+
+    .col-footer h3{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-footer p{
+    font-family: 'Poppins', sans-serif;
+}
+
+.email-id{
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-footer ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.col-footer ul li a{
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.col-footer ul li a:hover{
+    color: white;
+}
+
+.col-footer h4{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(238, 238, 238);
+}
+}
+</style>
+<body>
+    <!-- header -->
+    
+
+
+
+
+     <nav>
+        <input id="nav-toggle" type="checkbox">
+        <a href="www.nataliarozekbeauty.pl"><div class="logo"><img src="./images/logo.PNG" alt="" width="200px"></div></a>
+        <ul class="links">
+            <li><a href="#home">Start</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#inspiration">Inspiracje</a></li>
+            
+            <li><a href="#contact-salon">Kontakt</a></li>
+            <li><a href="#review">Opinie</a></li>
+
+            <a href="https://booksy.com/pl-pl/86483_babski-concept_salon-kosmetyczny_3_warszawa/staffer/215677#ba_s=bd_1"><img src="./images/booksy-logo.png" width="180px" alt=""></a>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+<!-- header -->
+
+<!-- home -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <span>Nails</span>
+        <h3>Zadbaj <br> o swoje <br> paznokcie</h3>
+       <a href="https://booksy.com/pl-pl/86483_babski-concept_salon-kosmetyczny_3_warszawa/staffer/215677#ba_s=bd_1"> <button class="home-reservation">Umów się na paznokcie</button></a>
+        <a href="#about"><button class="home-more">Dowiedz się więcej</button></a>
+    </div>
+    
+
+</section>
+<!-- end home -->
+
+<!-- about us -->
+
+<section class="about" id="about">
+
+
+    <div class="row" >
+
+        <div class="image">
+            <img src="images/about-natalia.jpeg" alt="">
+        </div>
+
+        <div class="content">
+            <h1 class="title">O mnie</h1>
+            <p>Cześć, nazywam się Natalia Rożek i zajmuję się stylizacją paznokci. Jestem absolwentką rocznej Szkoły Wizażu oraz studentką Psychologii Biznesu. Kocham beauty i kontakt z ludźmi. Jestem perfekcjonistką, bardzo dbam o jakość swoich stylizacji a największą radość sprawia mi idealnie wykonany manicure i uśmiech Klientki. Interesuje się wizażem i pielęgnacją a w wolnym czasie uprawiam sport – góry, rower, siłownia to mój świat. Jednym słowem jestem kobietą kompletną i z pazurem a pazur mam zawsze z najlepszym mani.</p>        
+            <p>Znajdziesz mnie w salonie Babski Concept, gdzie wykonuje stylizacje paznokci dłoni i stóp. Salon znajduje się przy Placu Konstytucji w Warszawie na ul. Koszykowa 47. </p>
+            
+            <div class="icons-container">
+                <div class="icons">
+                   <img src="images/manicure.png" alt="">
+                   <h3>Manicure</h3>
+                </div>
+                <div class="icons">
+                   <img src="images/pedicure.png" alt="">
+                   <h3>Pedicure</h3>
+                </div>
+                <div class="icons">
+                   <img src="images/naprawa.png" alt="">
+                   <h3>Naprawa</h3>
+                </div>
+             </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about us end -->
+
+<!-- services -->
+
+<section class="inspiration" id="inspiration">
+
+    <h1 class="heading">Inspiracje</h1>
+
+    <ul class="gallery">
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie1.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie2.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie3.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie4.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie5.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie6.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/panzokcie7.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie8.JPEG" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie9.jpeg" alt="" />
+        </li>
+        <li class="thumbnail">
+            <img tabindex="0" src="images/paznokcie10.jpeg" alt="" />
+        </li>
+    </ul>
+    <div class="popup hidden">
+        <button aria-label="Zamknij popup" class="popup__close"><i class="fa-solid fa-xmark"></i></button>
+        <img src="" alt="" class="popup__img" />
+        <button
+            aria-label="Poprzednie zdjęcie"
+            class="popup__arrow popup__arrow--left"
+        >
+        <i class="fa-solid fa-circle-chevron-left"></i>
+        </button>
+        <button
+            aria-label="Następne zdjęcie"
+            class="popup__arrow popup__arrow--right"
+        >
+        <i class="fa-solid fa-circle-chevron-right"></i>
+        </button>
+    </div>
+
+</section>
+
+
+<!-- services end -->
+
+<!-- styles -->
+
+<section class="styles" id="styles">
+
+    <h1 class="heading">Wybierz swój ulubiony kształt</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/spiczaste paznokcie.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Spiczaste</h3>
+            </div>
+         </div>
+ 
+         <div class="box">
+            <div class="image">
+                <img src="images/migdałki-paznokcie.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Migdałki</h3>
+            </div>
+         </div>
+ 
+         <div class="box">
+            <div class="image">
+                <img src="images/kwadratowe paznokcie.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Kwadratowe</h3>
+            </div>
+         </div>
+ 
+         <div class="box">
+             <div class="image">
+                 <img src="images/owalne-paznockie.jpeg" alt="">
+             </div>
+             <div class="content">
+                 <h3 class="title">Owalne</h3>
+
+             </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+                <img src="images/owalne-paznockie.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Owalne</h3>
+
+            </div>
+        </div>
+
+         <div class="box">
+            <div class="image">
+                <img src="images/baleriny-paznokcie.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h3 class="title">Baleriny</h3>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- styles end-->
+
+
+<!-- Babski Concept add -->
+
+<section class="contact-salon" id="contact-salon">
+    
+
+    <div class="row" >
+
+        
+
+        <div class="content">
+            <div class="reservation">
+                <img src="./images/umow.jpeg" alt="">
+            </div>
+
+            <div class="babski-concept-logo">
+                <img src="./images/babskiconcept-logo.png" alt="">
+            </div>
+
+            <div class="booksy-img">
+                <img src="./images/booksy-logo.png">
+            </div>
+        </div>
+
+        <div class="image">
+            <img src="images/babski-concept-wnetrze.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- End Babski Concept add-->
+
+
+
+
+<!-- Product -->
+
+<section class="product"> 
+    <h1 class="heading">Cennik</h1>
+    <button class="pre-btn"><i class="fa-solid fa-angle-left"></i></button>
+    <button class="nxt-btn"><i class="fa-solid fa-angle-right"></i></button>
+    
+    <div class="product-container">
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        <div class="product-card">
+            <h3>Manicure hybrydowy</h3>
+            <p>Czas usługi: 1 godz 30 min<p>
+              <h6>140 zł<span>/usługa</span></h6>
+              <button class="btn-price">Wybierz</button>
+              
+        </div>
+
+        
+
+        
+    </div>
+</section>
+<!--  End Product -->
+
+
+
+
+
+
+<!-- reviews -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">Opinie klientek</h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p><br>Atmosfera, klimat, wystrój jest cusownie! Profesjonalna obsługa, dokładnie wykonany zabieg pedicure przez Natalię, sterylnie i czysto. Odpowiednie miejsce na relaks i czas dla siebie :)<br><br></p>
+            <img src="images/wera.png" class="user" alt="">
+            
+            <h3>Weronika P.</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            <p>Bardzo profesjonalne. Super zrobione paznokcie. Pani Natalia była miła, staranna, przykładała się do pracy i wkłada w nią całe serce, perfekcjonistka w tym co robi - zadbała o najmniejszy szczegół. Paznokcie równe, pomalowane super, nie prześwituje, nie ma odprysków i wyjazdu poza linie. Na pewno wrócę.</p>
+            <img src="images/agata.png" class="user" alt="">
+            <h3>Agata W.</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+        
+        <div class="box">
+            <img src="images/quote-img.png" alt="" class="quote">
+            
+            <p><br>Najbardziej staranny i dokładny manicure jaki miałam.  Jestem pod wrażeniem Pani Natalii i jej umiejętności. Polecam z całego serca, ja jestem zachwycona. </p><br><br>
+            <img src="images/marlena.png" class="user" alt="">
+            <h3>Marlena Ś.</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- reviews end -->
+
+<!-- footer -->
+
+<footer>
+    <div class="row-footer">
+        <div class="col-footer">
+            <img src="./images/logo-white.png" class="logo" width="200px">
+            <p>Profesjonalna stylizacja paznocki w centrum Warszawy. Zadbaj o swoje paznokcie w naszym salonie.</p>
+        </div>
+
+        <div class="col-footer">
+            <h3>Kontakt<div class="underline"><span></span></div></h3>
+            <p>Babski Concept</p>
+            <p>ul. Koszykowa 47</p>
+            <p>00-659 Warszawa</p>
+            
+            <p class="email-id">nataliarozekbeauty@wp.pl</p>
+
+            <h4>tel. 690 842 848</h4>
+
+        </div>
+
+        <div class="col-footer">
+            <h3>Nawigacja<div class="underline"><span></span></div></h3>
+            <ul>
+                <li><a href="#home">Start</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#inspiration">Inspiracje</a></li>
+                <li><a href="#review">Opinie</a></li>
+                <li><a href="#contact-salon">Kontakt</a></li>
+            </ul>
+        </div>
+
+        <div class="col-footer">
+            <h3>Tutaj mnie znajdziesz <div class="underline"><span></span></div></h3>
+            <div class="social-img">
+                <img src="./images/booksy-white-footer.png" alt="">
+            </div>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright">© 2022 Design by JSawa</p>
+</footer>
+
+
+
+
+
+
+
+<!-- footer end-->
+
+
+
+
+
+
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+    //Gallery
+
+const THUMBNAILS = document.querySelectorAll(".thumbnail img");
+const POPUP = document.querySelector(".popup");
+const POPUP_CLOSE = document.querySelector(".popup__close");
+const POPUP_IMG = document.querySelector(".popup__img");
+const ARROW_LEFT = document.querySelector(".popup__arrow--left");
+const ARROW_RIGHT = document.querySelector(".popup__arrow--right");
+
+let currentImgIndex;
+
+const showNextImg = () => {
+    if (currentImgIndex === THUMBNAILS.length - 1) {
+        currentImgIndex = 0;
+    } else {
+        currentImgIndex++;
+    }
+    POPUP_IMG.src = THUMBNAILS[currentImgIndex].src;
+};
+
+const showPreviousImg = () => {
+    if (currentImgIndex === 0) {
+        currentImgIndex = THUMBNAILS.length - 1;
+    } else {
+        currentImgIndex--;
+    }
+    POPUP_IMG.src = THUMBNAILS[currentImgIndex].src;
+};
+
+const closePopup = () => {
+    POPUP.classList.add("fade-out");
+    setTimeout(() => {
+        POPUP.classList.add("hidden");
+        POPUP.classList.remove("fade-out");
+        THUMBNAILS.forEach((element) => {
+            element.setAttribute("tabindex", 1);
+        });
+    }, 300);
+};
+
+THUMBNAILS.forEach((thumbnail, index) => {
+    const showPopup = (e) => {
+        POPUP.classList.remove("hidden");
+        POPUP_IMG.src = e.target.src;
+        currentImgIndex = index;
+        THUMBNAILS.forEach((element) => {
+            element.setAttribute("tabindex", -1);
+        });
+    };
+
+    thumbnail.addEventListener("click", showPopup);
+
+    thumbnail.addEventListener("keydown", (e) => {
+        if (e.code === "Enter" || e.keyCode === 13) {
+            showPopup(e);
+        }
+    });
+});
+
+POPUP_CLOSE.addEventListener("click", closePopup);
+
+ARROW_RIGHT.addEventListener("click", showNextImg);
+
+ARROW_LEFT.addEventListener("click", showPreviousImg);
+
+document.addEventListener("keydown", (e) => {
+    if (!POPUP.classList.contains("hidden")) {
+        if (e.code === "ArrowRight" || e.keyCode === 39) {
+            showNextImg();
+        }
+
+        if (e.code === "ArrowLeft" || e.keyCode === 37) {
+            showPreviousImg();
+        }
+
+        if (e.code === "Escape" || e.keyCode === 27) {
+            closePopup();
+        }
+    }
+});
+
+POPUP.addEventListener("click", (e) => {
+    if (e.target === POPUP) {
+        closePopup();
+    }
+});
+
+
+//Pricing
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- End Home -->
+
+  
+</body>
+</html>
